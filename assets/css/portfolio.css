@@ -1,0 +1,137 @@
+body{
+
+    background-image:url(../images/colorful-holographic-gradient-background-design-vector.jpg);
+	font-family: Arial;
+	font-size: 18px;
+	color: whitesmoke;
+	line-height: 28px;
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2 {
+	font-family: "Georgia";
+	color: #49274A;
+	padding-bottom: 30px;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	border-bottom: 2px solid #ccc;
+}
+
+h2 {
+	font-size: 22px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+header {
+    background-color: #F8EEE7;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #7A4988;
+}
+#logo {
+	float: left;
+	display: block;
+	background-color: #49274A;
+	color:#fff;
+	font-family: "Georgia";
+	font-size: 30px;
+	padding: 0 40px;
+	line-height: 90px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	display: block;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 90px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #49274A;
+	margin-left: 20px;
+	line-height: 22px;
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
+
+nav ul li:first-child a {
+	border-left: 0;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+}
+
+.flexbox-container {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.flexbox-item {
+    widows: 200px;
+    margin: 10px;
+    border: 3px solid #49274a;
+    background-color: #d7bfdc
+
+}
+.about-me {
+    max-width: 100%;
+      display: flex;
+      background: #d7bfdc;
+      padding: 50px;
+      box-sizing: border-box;
+      flex-direction: row;
+
+
+}
+
+#portfolio {
+    max-width: 100%;
+      display: flex;
+      background: #d7bfdc;
+      padding: 50px;
+      box-sizing: border-box;
+      flex-direction: row;
+    
+}
+
+#contact-information {
+    max-width: 100%;
+    display: flex;
+    background: #d7bfdc;
+    padding: 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+footer {
+	text-align: center;
+	background-color: #49274A;
+	color: #ccc;
+	line-height: 90px;
+	margin-top: 40px;
+	border-top: 8px solid #b69ab3;
+    font-size: 12px;
+}
