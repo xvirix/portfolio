@@ -3,7 +3,7 @@ body{
     background-image:url(../images/colorful-holographic-gradient-background-design-vector.jpg);
 	font-family: Arial;
 	font-size: 18px;
-	color: whitesmoke;
+	color: white;
 	line-height: 28px;
 }
 * {
@@ -20,17 +20,17 @@ h1, h2 {
 
 h1 {
 	font-size: 30px;
-	border-bottom: 2px solid #ccc;
+	border-bottom: 2px solid white;
 }
 
 h2 {
 	font-size: 22px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid white;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 }
 header {
-    background-color: #F8EEE7;
+    background-color: white;
 	margin-bottom: 40px;
 	border-bottom: 2px solid #7A4988;
 }

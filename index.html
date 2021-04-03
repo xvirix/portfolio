@@ -3,10 +3,12 @@
 <head>
     <title>Viridiana's Portfolio</title> 
     <meta name="description" content="Personal portfolio for Viridiana">
-    <link rel="stylesheet" type="text/css"
-    href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 <body>
+  <!-- This will center text on mobile, and left align it on screens 640px and wider -->
+<div class="text-center sm:text-left"></div>
     <header>
         <div class="wrapper">
             <a href="#" id="logo">Viridiana</a>
@@ -16,16 +18,19 @@
                     <li><a href="#AboutMe">About Me</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="#Contact-information">Contact Information</a></li>
+                    <li><a href="assets/images/OFFICIAL RESUME.pdf" download>Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/viridiana-o-a7921495/">LinkedIn</a></li>
+                    <li><a href="https://github.com/xvirix/">GitHub</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class=flexbox-container>
+    <div class="flex flex-col flexbox-item rounded-r-lg">
     <section>
         <span id="AboutMe">
         <article>
-            <div class="flexbox-item about-me">
+            <div>
             <h1>About Me</h1>
             <img src = "assets/images/IMG_9686.jpg" alt="picture of viri" width="10%"/>
             <p> My names is Viridiana, but I go by Viri. I am 25 years old 
@@ -36,37 +41,51 @@
             </p>
         
                  </div>
+                </div>
         </article>
     </span>
     </section>
 
     <section>
+        <div>
        <span id="Portfolio">
            <article>
-            <div class="flexbox-item Portfolio">
+            <div class="flexbox-item Portfolio rounded-r-lg">
             <h1>Portfolio</h1>
-            <img src = "assets/images/portfolio.jpg" alt="picture of viri" width="10%"/>
-            <img src = "assets/images/phones.jpg" alt="picture of viri" width="10%"/>
-            <img src = "assets/images/bridge.jpg" alt="picture of viri" width="10%"/>
+            <div class="grid grid-flow-col grid-rows-1 gap-4">  
+           <div><p><a href="https://github.com/Dmanley93/Project-1-Group-5">Project 1 Repository (Deployed Below)</a><a href="https://dmanley93.github.io/Project-1-Group-5/">
+                <img src="assets/images/project.jpg" alt="github" width="400" height="800" class="pb-8 pl-2">
+                </a></p></div>
+          <div><p><a href=" https://github.com/xvirix/On-Click.git">Password Generator Repository (Deployed Below)</a><a href="https://xvirix.github.io/On-Click/">
+                    <img src="assets/images/passwordGenerator.png" alt="github" width="400" height="800" class="pb-8">
+                    </a></p></div>
+             <div><p><a href="https://github.com/xvirix/Calendar">Scheduler (Deployed Below)</a><a href="https://xvirix.github.io/Calendar/">
+                        <img src="assets/images/scheduler.png" alt="github" width="400" height="800" class="pb-8 pr-2">
+                        </a></p></div>
+                 </div>       
                  </div>
-          
+                </div>
         </article> 
      </span>
     </section>
 
     <section>
+        <div>
         <span id="Contact-information">
         <article>
-            <div class="flexbox-item contact-information">
+            <div class="flexbox-item contact-information rounded-r-lg">
             <h2>Contact Information </h2>
-            <div>(817)777-7777 | </div>
-            <div> viri@gmail.com | </div>
-            <div> GitHub </div>
+            <div>(817)714-5655 | </div>
+            <div> viriortiz32@gmail.com| </div>
+            <div> Fort Worth, Texas </div>
             </div>
         </article>
         </span>
     </section>
     </div>
+    </div>
+</div>
+</div>
 
     <footer> &copy; 2021 Viridiana Ortiz</footer>
 </body>
