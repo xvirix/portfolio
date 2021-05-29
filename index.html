@@ -5,7 +5,12 @@
     <meta name="description" content="Personal portfolio for Viridiana">
     <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+   
 </head>
+
+            
 <body>
   <!-- This will center text on mobile, and left align it on screens 640px and wider -->
 <div class="text-center sm:text-left"></div>
@@ -26,55 +31,90 @@
         </div>
     </header>
 
-    <div class="flex flex-col flexbox-item rounded-r-lg">
-    <section>
-        <span id="AboutMe">
-        <article>
-            <div>
-            <h1>About Me</h1>
-            <img src = "assets/images/IMG_9686.jpg" alt="picture of viri" width="10%"/>
-            <p> My names is Viridiana, but I go by Viri. I am 25 years old 
-                and I graduated from Texas Christian University with a degree 
-                in the Science of Education. I plan to find a new passion in technology and
-                would love to pursue higher education. A fun fact is that I own three dogs
-                 and enjoy spending my free time with them. 
-            </p>
-        
-                 </div>
-                </div>
-        </article>
-    </span>
-    </section>
-
     <section>
         <div>
        <span id="Portfolio">
            <article>
-            <div class="flexbox-item Portfolio rounded-r-lg">
-            <h1>Portfolio</h1>
-            <div class="grid grid-flow-col grid-rows-1 gap-4">  
-           <div><p><a href="https://github.com/Dmanley93/Project-1-Group-5">Project 1 Repository (Deployed Below)</a><a href="https://dmanley93.github.io/Project-1-Group-5/">
-                <img src="assets/images/project.jpg" alt="github" width="400" height="800" class="pb-8 pl-2">
-                </a></p></div>
-          <div><p><a href=" https://github.com/xvirix/On-Click.git">Password Generator Repository (Deployed Below)</a><a href="https://xvirix.github.io/On-Click/">
-                    <img src="assets/images/passwordGenerator.png" alt="github" width="400" height="800" class="pb-8">
-                    </a></p></div>
-             <div><p><a href="https://github.com/xvirix/Calendar">Scheduler (Deployed Below)</a><a href="https://xvirix.github.io/Calendar/">
-                        <img src="assets/images/scheduler.png" alt="github" width="400" height="800" class="pb-8 pr-2">
-                        </a></p></div>
-                 </div>       
-                 </div>
+
+    
+            </head>
+            
+            <body>
+              <div class="sliderAx h-auto">
+                  <div id="slider-1" class="container mx-auto">
+                    <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(assets/images/project.jpg)">
+                   <div class="md:w-1/2">
+                    <p class="font-bold text-sm uppercase">Project 1</p>
+                    <p class="text-3xl font-bold">Gaming Stats Website</p>
+                    <p class="text-2xl mb-10 leading-none">Collaborative project</p>
+                    <a href="https://github.com/Dmanley93/Project-1-Group-5" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Repository</a>
+                    <a href="https://dmanley93.github.io/Project-1-Group-5/" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Deployed Project</a>
+                    </div>  
+                </div> <!-- container -->
+                  <br>
+                  </div>
+            
+                  <div id="slider-2" class="container mx-auto">
+                    <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(assets/images/project2.jpg)">
+                   
+              <p class="font-bold text-sm uppercase">Project 2</p>
+                    <p class="text-3xl font-bold">e-Commerse Website</p>
+                    <p class="text-2xl mb-10 leading-none">Collaborative project</p>
+                    <a href="https://github.com/ktp1451/Project-2/tree/vo" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Repository</a>
+                    <a href="https://kvdproject-aura.herokuapp.com/" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Deployed Project</a>
+                     
+                </div> <!-- container -->
+                  <br>
+                  </div>
                 </div>
-        </article> 
-     </span>
+
+                <div id="slider-3" class="container mx-auto">
+                    <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(assets/images/scheduler.png)">
+                   
+              <p class="font-bold text-sm uppercase">Calendar</p>
+                    <p class="text-3xl font-bold">Organize your day</p>
+                    <p class="text-2xl mb-10 leading-none">Solo project</p>
+                    <a href="https://github.com/xvirix/Calendar" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Repository</a>
+                    <a href="https://xvirix.github.io/Calendar/" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Deployed Project</a>
+                     
+                </div> <!-- container -->
+                  <br>
+                  </div>
+                </div>
+             <div  class="flex justify-between w-12 mx-auto pb-2">
+                    <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 " ></button>
+                <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+                <button id="sButton3" onclick="sliderButton3() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+              </div>
+            
+    </section>
+
+
+    <div class="flex flex-col flexbox-item rounded-r-lg">
+    <section>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 h-screen">
+              <div class="max-h-96 md:h-screen">
+                <img class="w-screen h-screen object-cover object-top" src="assets/images/IMG_9686.jpg" alt="">
+              </div>
+              <div class="flex p-10">
+                <div class="mb-auto mt-auto max-w-lg">
+                  <h1 class="text-3xl uppercase">Virdiana Ortiz</h1>
+                  <p class="font-semibold mb-5">Web Developer/Educator</p>
+                  <p>My name is Viridiana Ortiz and I am 25 years old and I graduated from Texas Christian University with a degree in the Science of Education. I plan to find a new passion in technology and would love to pursue higher education. A fun fact is that I own three dogs and enjoy spending my free time with them.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section>
         <div>
         <span id="Contact-information">
         <article>
-            <div class="flexbox-item contact-information rounded-r-lg">
-            <h2>Contact Information </h2>
+            <div class="flexbox-item contact-information rounded-r-lg place-items-center">
+            <div><h2>Contact Information </h2></div>
             <div>(817)714-5655 | </div>
             <div> viriortiz32@gmail.com| </div>
             <div> Fort Worth, Texas </div>
